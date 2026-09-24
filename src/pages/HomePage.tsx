@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import beautyImage from "../assets/beautyImage-transparent.png";
 
 const Page = styled.div`
   min-height: 100vh;
@@ -119,14 +120,12 @@ const ImageCard = styled.div`
   }
 `;
 
-const ImagePlaceholder = styled.div`
-  text-align: center;
-  color: #8c7070;
-
-  p {
-    margin: 8px 0 0;
-    font-size: 14px;
-  }
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  object-fit: contain;
+  padding: 24px;
 `;
 
 const FloatingCard = styled.div`
@@ -193,10 +192,7 @@ function Home() {
 
         <ImageWrapper>
           <ImageCard>
-            <ImagePlaceholder>
-              <strong>Beauty image</strong>
-              <p>We will add the image here</p>
-            </ImagePlaceholder>
+            <Image src={beautyImage} alt="Beauty illustration" />
           </ImageCard>
 
           <FloatingCard>
