@@ -124,6 +124,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Services from "./pages/Service";
 import BeautyPlan from "./pages/BeautyPlan";
+import PlanReview from "./pages/PlanReview";
 
 
 function App() {
@@ -133,6 +134,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/beauty-plan" element={<BeautyPlan />} />
+        <Route path="/plan-review" element={<PlanReview />} />
       </Routes>
     </BrowserRouter>
   );
